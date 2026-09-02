@@ -38,7 +38,7 @@ called by Jack programs at runtime.
 | Project 06 — Hack Assembler | Java | Hack assembly → Hack binary | Two-pass resolution of labels and variables, plus A- and C-instruction encoding |
 | Project 08 — VM Translator | Java | VM code → Hack assembly | Stack operations, memory segments, branching, functions, calls, returns, and bootstrap code |
 | Project 11 — Jack Compiler | Java | Jack source → VM code | Tokenization, parsing, scoped symbol management, and VM code generation |
-| Project 12 — Jack OS | Jack | Jack OS source → VM code | Heap allocation, data types, arithmetic, graphics, text output, keyboard input, and system startup |
+| Project 12 — Jack OS | Jack | Jack OS modules (`.jack`) → VM runtime modules (`.vm`, compiled by Project 11) | Heap allocation, data types, arithmetic, graphics, text output, keyboard input, and system startup |
 
 ## Project Architecture
 
@@ -282,12 +282,11 @@ This public repository contains documentation and architecture diagrams only.
 Project source code, course test programs, generated outputs, and
 course-provided materials are intentionally excluded.
 
-## Technology
+## Technology and Tools
 
 - Java 11+
 - Jack programming language
 - Nand2Tetris CPU Emulator, VM Emulator, and testing tools
-- Recursive-descent parsing and code generation
 
 ## Validation
 
